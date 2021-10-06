@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageVersion>0.01</PackageVersion>
+    <Authors>Anthony Harrison</Authors>
+    <Copyright>Anthony Harrison</Copyright>
+    <PackageIconUrl>https://avatars.githubusercontent.com/u/25448533?s=400&amp;u=3a5e16f2d8379eea09588f18badd2e152544d5be&amp;v=4</PackageIconUrl>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Owners>Anthony Harrison</Owners>
+    <Summary>An EasyPrinter for generating HTML using C# in .NET Interactive Notebooks</Summary>
+    <PackageTags>Yatter</PackageTags>
+    <Title>Yatter.UI.NetInteractiveNotebook.Components</Title>
+    <Description>An EasyPrinter for generating HTML using C# in .NET Interactive Notebooks</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+</Project>
