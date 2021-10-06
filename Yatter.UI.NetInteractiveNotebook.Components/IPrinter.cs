@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Yatter.UI.NetInteractiveNotebook.Components
 {
-    interface IPrinter
+    public interface IPrinter
     {
         public void PrintObject();
     }

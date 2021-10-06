@@ -1,8 +1,8 @@
 ﻿using System;
 namespace Yatter.UI.NetInteractiveNotebook.Components
 {
-    interface IObject : IPrinter
+    public interface IObject : IPrinter
     {
-        void AddPrinter(IPrinter printer);
+        public void AddPrinter(IPrinter printer);
     }
 }

@@ -2,19 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageVersion>0.01</PackageVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1</PackageVersion>
     <Authors>Anthony Harrison</Authors>
     <Copyright>Anthony Harrison</Copyright>
-    <PackageIconUrl>https://avatars.githubusercontent.com/u/25448533?s=400&amp;u=3a5e16f2d8379eea09588f18badd2e152544d5be&amp;v=4</PackageIconUrl>
-    <NeutralLanguage>en-GB</NeutralLanguage>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Owners>Anthony Harrison</Owners>
+    <PackageProjectUrl>https://github.com/HarrisonOfTheNorth/Yatter.UI.NetInteractiveNotebook.Components</PackageProjectUrl>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     <Summary>An EasyPrinter for generating HTML using C# in .NET Interactive Notebooks</Summary>
     <PackageTags>Yatter</PackageTags>
     <Title>Yatter.UI.NetInteractiveNotebook.Components</Title>
     <Description>An EasyPrinter for generating HTML using C# in .NET Interactive Notebooks</Description>
+    <PackageIconUrl>https://avatars.githubusercontent.com/u/25448533?s=400&amp;u=3a5e16f2d8379eea09588f18badd2e152544d5be&amp;v=4</PackageIconUrl>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <PackageLicenseUrl>https://github.com/HarrisonOfTheNorth/Yatter.UI.NetInteractiveNotebook.Components/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>Yatter.UI.NetInteractiveNotebook.Components</PackageId>
+    <Configurations>Release;Debug</Configurations>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
   </ItemGroup>
